@@ -90,6 +90,8 @@ GEM
       railties (>= 3.2)
     erubi (1.9.0)
     execjs (2.7.0)
+    faker (2.13.0)
+      i18n (>= 1.6, < 2)
     ffi (1.13.1)
     font-awesome-sass (5.13.0)
       sassc (>= 1.11)
@@ -131,6 +133,8 @@ GEM
     public_suffix (4.0.6)
     puma (4.3.6)
       nio4r (~> 2.0)
+    pundit (2.1.0)
+      activesupport (>= 3.0.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
       rack
@@ -188,6 +192,10 @@ GEM
     simple_form (5.0.2)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
+    simple_token_authentication (1.17.0)
+      actionmailer (>= 3.2.6, < 7)
+      actionpack (>= 3.2.6, < 7)
+      devise (>= 3.2, < 6)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -239,6 +247,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   devise
   dotenv-rails
+  faker
   font-awesome-sass
   jbuilder (~> 2.7)
   listen (~> 3.2)
@@ -246,11 +255,13 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma (~> 4.1)
+  pundit
   rails (~> 6.0.3, >= 6.0.3.2)
   redis (~> 4.0)
   sass-rails (>= 6)
   selenium-webdriver
   simple_form
+  simple_token_authentication
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
